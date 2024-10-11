@@ -322,6 +322,51 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        pourcent: pourcent {
+            compatible = "zmk,behavior-mod-morph";
+            label = "POURCENT";
+            bindings = <&kp PERCENT>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        anti_circonflexe: anti_circonflexe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ANTI_CIRCONFLEXE";
+            bindings = <&kp LEFT_BRACE>, <&kp RA(LS(NUMBER_6))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        point_mort: point_mort {
+            compatible = "zmk,behavior-mod-morph";
+            label = "POINT_MORT";
+            bindings = <&kp RIGHT_BRACE>, <&kp RA(LS(SEMICOLON))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        egal: egal {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EGAL";
+            bindings = <&kp EQUAL>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        tilde: tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TILDE";
+            bindings = <&kp TILDE>, <&kp RA(TILDE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -549,11 +594,11 @@
         sym_layer {
             label = "SYMBOLS";
             bindings = <
-&trans  &circonflexe  &inferieur            &monnaies              &trans  &trans        &trans  &kp AMPS  &trans    &trans  &trans  &trans
-&trans  &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans        &trans  &trans    &trans    &trans  &trans  &trans
-&trans  &trans        &trans                &trans                 &trans  &kp HASH      &trans  &trans    &trans    &trans  &trans  &trans
-                                            &kp END                                                        &kp C_PP
-        &trans        &trans                &trans                 &trans                        &trans    &trans    &trans  &trans
+&trans  &circonflexe       &inferieur            &superieur             &monnaies  &pourcent      &trans  &kp AMPS  &trans    &trans  &trans  &trans
+&trans  &anti_circonflexe  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &egal      &egal          &trans  &trans    &trans    &trans  &trans  &trans
+&trans  &tilde             &trans                &trans                 &trans     &kp HASH       &trans  &trans    &trans    &trans  &trans  &trans
+                                                 &kp END                                                            &kp C_PP
+        &trans             &trans                &trans                 &trans                            &trans    &trans    &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_NEXT C_PREV>;
