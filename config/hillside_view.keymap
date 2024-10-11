@@ -243,6 +243,168 @@
         };
     };
 
+    macros {
+        e_circonflexe_min: e_circonflexe_min {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>,
+                <&macro_press>,
+                <&kp E>;
+
+            label = "E_CIRCONFLEXE_MIN";
+        };
+
+        e_circonflexe_maj: e_circonflexe_maj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>,
+                <&macro_press>,
+                <&kp LS(E)>;
+
+            label = "E_CIRCONFLEXE_MAJ";
+        };
+
+        u_circonflexe_maj: u_circonflexe_maj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>,
+                <&macro_press>,
+                <&kp LS(U)>;
+
+            label = "U_CIRCONFLEXE_MAJ";
+        };
+
+        u_circonflexe_min: u_circonflexe_min {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>,
+                <&macro_press>,
+                <&kp U>;
+
+            label = "U_CIRCONFLEXE_MIN";
+        };
+
+        i_circonflexe_min: i_circonflexe_min {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>,
+                <&macro_press>,
+                <&kp I>;
+
+            label = "I_CIRCONFLEXE_MIN";
+        };
+
+        i_circonflexe_maj: i_circonflexe_maj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>,
+                <&macro_press>,
+                <&kp LS(I)>;
+
+            label = "I_CIRCONFLEXE_MAJ";
+        };
+
+        a_circonflexe_maj: a_circonflexe_maj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>,
+                <&macro_press>,
+                <&kp LS(A)>;
+
+            label = "A_CIRCONFLEXE_MAJ";
+        };
+
+        a_circonflexe_min: a_circonflexe_min {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>,
+                <&macro_press>,
+                <&kp A>;
+
+            label = "A_CIRCONFLEXE_MIN";
+        };
+
+        o_circonflexe_min: o_circonflexe_min {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>,
+                <&macro_press>,
+                <&kp O>;
+
+            label = "O_CIRCONFLEXE_MIN";
+        };
+
+        o_circonflexe_maj: o_circonflexe_maj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>,
+                <&macro_press>,
+                <&kp LS(O)>;
+
+            label = "O_CIRCONFLEXE_MAJ";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
