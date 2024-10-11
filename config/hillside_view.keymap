@@ -241,6 +241,51 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        e_circonflexe: e_circonflexe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_CIRCONFLEXE";
+            bindings = <&e_circonflexe_min>, <&e_circonflexe_maj>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        i_circonflexe: i_circonflexe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_CIRCONFLEXE";
+            bindings = <&i_circonflexe_min>, <&i_circonflexe_maj>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        u_circonflexe: u_circonflexe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_CIRCONFLEXE";
+            bindings = <&u_circonflexe_min>, <&u_circonflexe_maj>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        a_circonflexe: a_circonflexe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_CIRCONFLEXE";
+            bindings = <&a_circonflexe_min>, <&a_circonflexe_maj>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        o_circonflexe: o_circonflexe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_CIRCONFLEXE";
+            bindings = <&o_circonflexe_min>, <&o_circonflexe_maj>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
