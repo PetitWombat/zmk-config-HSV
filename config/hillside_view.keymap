@@ -261,9 +261,9 @@
 
         onedk_layer {
             bindings = <
-&trans  &trans     &trans     &trans     &trans  &trans      &trans    &trans    &trans  &trans  &trans  &trans
-&trans  &kp RA(Z)  &kp RA(G)  &kp RA(F)  &trans  &trans      &kp LPAR  &kp RPAR  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans     &trans  &trans      &trans    &trans    &sl 2   &trans  &trans  &trans
+&trans  &trans     &kp RA(C)  &kp RA(P)  &trans  &trans      &trans    &trans    &trans  &trans  &trans     &trans
+&trans  &kp RA(Z)  &kp RA(G)  &kp RA(F)  &trans  &trans      &kp LPAR  &kp RPAR  &trans  &trans  &kp RA(H)  &trans
+&trans  &kp RA(Q)  &trans     &trans     &trans  &trans      &trans    &trans    &sl 2   &trans  &trans     &trans
                               &trans                                             &trans
         &trans     &trans     &trans     &trans                        &trans    &trans  &trans  &trans
             >;
