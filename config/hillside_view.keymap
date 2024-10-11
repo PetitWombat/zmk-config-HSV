@@ -553,7 +553,7 @@
 &trans  &kp RA(Z)       &kp RA(G)  &kp RA(F)  &e_circonflexe  &kp RA(N)      &kp LPAR  &kp RPAR  &i_circonflexe  &kp RA(I)         &kp RA(H)       &kp LC(N0)
 &trans  &kp RA(Q)       &kp RA(S)  &trans     &trans          &trans         &trans    &trans    &sl 2           &trans            &trans          &trans
                                    &trans                                                        &trans
-        &trans          &trans     &trans     &trans                                   &trans    &trans          &trans            &trans
+        &trans          &trans     &trans     &trans                                   &trans    &trans          &kp LS(RA(N0))    &trans
             >;
         };
 
@@ -607,11 +607,11 @@
         num_layer {
             label = "NUMBERS";
             bindings = <
-&kp TAB  &ht F1 N1  &ht F2 N2  &ht F3 N3  &ht F4 N4  &ht F5 N5      &ht F6 N6  &ht F7 N7  &ht F8 N8  &ht F9 N9  &ht F10 N0  &trans
-&trans   &trans     &trans     &trans     &trans     &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans      &trans
-&trans   &trans     &trans     &trans     &trans     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &trans      &trans
-                               &trans                                                     &trans
-         &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans
+&trans  &ht F1 N1  &ht F2 N2  &kp UP_ARROW    &ht F4 N4  &ht F5 N5      &kp KP_SLASH  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp COLON   &trans
+&trans  &trans     &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &trans         &kp KP_MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0   &trans
+&trans  &trans     &trans     &trans          &trans     &trans         &kp KP_N1     &kp PG_DN  &kp KP_N2  &kp KP_N3  &kp KP_DOT  &trans
+                              &trans                                                             &trans
+        &trans     &trans     &trans          &trans                                  &trans     &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp HOME END &inc_dec_kp C_NEXT C_PREV>;
