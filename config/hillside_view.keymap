@@ -456,11 +456,11 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&none        &kp Q    &kp C            &kp O           &kp P            &kp W      &kp J   &kp M      &kp D             &sl 1           &kp Y         &none
-&kp LC(TAB)  &kp A    &kp S            &kp E           &kp N            &kp F      &kp L   &kp R      &kp T             &kp I           &kp U         &zoom
-&none        &kp Z    &kp X            &interrogation  &kp V            &kp B      &point  &kp H      &kp G             &virgule        &kp K         &none
-                                       &kp SPACE                                                      &kp C_MUTE
-             &kp ESC  &mt RALT TILDE2  &mt LCTRL TAB   &lt 6 BACKSPACE                     &lt 6 DEL  &mt LSHIFT SPACE  &mt RALT ENTER  &kp LEFT_GUI
+&none        &kp Q    &kp C          &kp O           &kp P            &kp W      &kp J   &kp M      &kp D        &sl 1            &kp Y         &none
+&kp LC(TAB)  &kp A    &kp S          &kp E           &kp N            &kp F      &kp L   &kp R      &kp T        &kp I            &kp U         &zoom
+&none        &kp Z    &kp X          &interrogation  &kp V            &kp B      &point  &kp H      &kp G        &virgule         &kp K         &none
+                                     &kp SPACE                                                      &kp C_MUTE
+             &kp ESC  &mt LCTRL TAB  &lt 5 ENTER     &lt 6 BACKSPACE                     &lt 6 DEL  &lt 5 ENTER  &mt LSHFT SPACE  &kp LEFT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
