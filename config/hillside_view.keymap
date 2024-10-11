@@ -469,7 +469,7 @@
         onedk_layer {
             bindings = <
 &trans  &a_circonflexe  &kp RA(C)  &kp RA(P)  &o_circonflexe  &trans         &trans    &trans    &trans          &kp RA(LS(APOS))  &u_circonflexe  &trans
-&trans  &kp RA(Z)       &kp RA(G)  &kp RA(F)  &e_circonflexe  &kp RA(N)      &kp LPAR  &kp RPAR  &i_circonflexe  &kp RA(I)         &kp RA(H)       &trans
+&trans  &kp RA(Z)       &kp RA(G)  &kp RA(F)  &e_circonflexe  &kp RA(N)      &kp LPAR  &kp RPAR  &i_circonflexe  &kp RA(I)         &kp RA(H)       &kp LC(N0)
 &trans  &kp RA(Q)       &kp RA(S)  &trans     &trans          &trans         &trans    &trans    &sl 2           &trans            &trans          &trans
                                    &trans                                                        &trans
         &trans          &trans     &trans     &trans                                   &trans    &trans          &trans            &trans
@@ -513,11 +513,11 @@
         sym_layer {
             label = "SYMBOLS";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &trans    &trans  &trans    &trans    &trans         &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans    &trans    &trans         &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                          &kp END                                                  &kp C_PP
-        &trans    &trans  &trans    &trans                              &trans     &trans           &trans    &trans
+&trans  &trans  &trans                &trans                 &trans  &trans        &trans  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans        &trans  &trans    &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans  &trans                &trans                 &trans  &kp HASH      &trans  &kp PLUS  &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                      &kp END                                                        &kp C_PP
+        &trans  &trans                &trans                 &trans                        &trans    &trans           &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_NEXT C_PREV>;
