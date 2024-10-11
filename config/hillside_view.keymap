@@ -286,6 +286,42 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        circonflexe: circonflexe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CIRCONFLEXE";
+            bindings = <&kp CARET>, <&kp RA(NUMBER_6)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inferieur: inferieur {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INFERIEUR";
+            bindings = <&kp LT>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        superieur: superieur {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SUPERIEUR";
+            bindings = <&kp GREATER_THAN>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        monnaies: monnaies {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MONNAIES";
+            bindings = <&kp DOLLAR>, <&sl 8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -513,11 +549,11 @@
         sym_layer {
             label = "SYMBOLS";
             bindings = <
-&trans  &trans  &trans                &trans                 &trans  &trans        &trans  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans        &trans  &trans    &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans  &trans                &trans                 &trans  &kp HASH      &trans  &kp PLUS  &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                      &kp END                                                        &kp C_PP
-        &trans  &trans                &trans                 &trans                        &trans    &trans           &trans    &trans
+&trans  &circonflexe  &inferieur            &monnaies              &trans  &trans        &trans  &kp AMPS  &trans    &trans  &trans  &trans
+&trans  &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans        &trans  &trans    &trans    &trans  &trans  &trans
+&trans  &trans        &trans                &trans                 &trans  &kp HASH      &trans  &trans    &trans    &trans  &trans  &trans
+                                            &kp END                                                        &kp C_PP
+        &trans        &trans                &trans                 &trans                        &trans    &trans    &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_NEXT C_PREV>;
@@ -549,6 +585,16 @@
             // F15 and F14 are brightness controls for macOS
 
             sensor-bindings = <&inc_dec_kp F15 F14 &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        currencies_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans                                      &trans
+        &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
