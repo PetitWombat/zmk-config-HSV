@@ -468,11 +468,11 @@
 
         onedk_layer {
             bindings = <
-&trans  &trans     &kp RA(C)  &kp RA(P)  &trans  &trans      &trans    &trans    &trans  &trans  &trans     &trans
-&trans  &kp RA(Z)  &kp RA(G)  &kp RA(F)  &trans  &trans      &kp LPAR  &kp RPAR  &trans  &trans  &kp RA(H)  &trans
-&trans  &kp RA(Q)  &trans     &trans     &trans  &trans      &trans    &trans    &sl 2   &trans  &trans     &trans
-                              &trans                                             &trans
-        &trans     &trans     &trans     &trans                        &trans    &trans  &trans  &trans
+&trans  &a_circonflexe  &kp RA(C)  &kp RA(P)  &o_circonflexe  &trans         &trans    &trans    &trans          &kp RA(LS(APOS))  &u_circonflexe  &trans
+&trans  &kp RA(Z)       &kp RA(G)  &kp RA(F)  &e_circonflexe  &kp RA(N)      &kp LPAR  &kp RPAR  &i_circonflexe  &kp RA(I)         &kp RA(H)       &trans
+&trans  &kp RA(Q)       &kp RA(S)  &trans     &trans          &trans         &trans    &trans    &sl 2           &trans            &trans          &trans
+                                   &trans                                                        &trans
+        &trans          &trans     &trans     &trans                                   &trans    &trans          &trans            &trans
             >;
         };
 
