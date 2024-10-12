@@ -425,7 +425,7 @@
                 <&kp NUMBER_6>,
                 <&macro_release>,
                 <&kp RALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp E>;
 
             label = "E_CIRCONFLEXE_MIN";
@@ -441,7 +441,7 @@
                 <&kp NUMBER_6>,
                 <&macro_release>,
                 <&kp RALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LS(E)>;
 
             label = "E_CIRCONFLEXE_MAJ";
@@ -457,7 +457,7 @@
                 <&kp NUMBER_6>,
                 <&macro_release>,
                 <&kp RALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LS(U)>;
 
             label = "U_CIRCONFLEXE_MAJ";
@@ -473,7 +473,7 @@
                 <&kp NUMBER_6>,
                 <&macro_release>,
                 <&kp RALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp U>;
 
             label = "U_CIRCONFLEXE_MIN";
@@ -489,7 +489,7 @@
                 <&kp NUMBER_6>,
                 <&macro_release>,
                 <&kp RALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp I>;
 
             label = "I_CIRCONFLEXE_MIN";
@@ -505,7 +505,7 @@
                 <&kp NUMBER_6>,
                 <&macro_release>,
                 <&kp RALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LS(I)>;
 
             label = "I_CIRCONFLEXE_MAJ";
@@ -521,7 +521,7 @@
                 <&kp NUMBER_6>,
                 <&macro_release>,
                 <&kp RALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LS(A)>;
 
             label = "A_CIRCONFLEXE_MAJ";
@@ -537,7 +537,7 @@
                 <&kp NUMBER_6>,
                 <&macro_release>,
                 <&kp RALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp A>;
 
             label = "A_CIRCONFLEXE_MIN";
@@ -553,7 +553,7 @@
                 <&kp NUMBER_6>,
                 <&macro_release>,
                 <&kp RALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp O>;
 
             label = "O_CIRCONFLEXE_MIN";
@@ -569,7 +569,7 @@
                 <&kp NUMBER_6>,
                 <&macro_release>,
                 <&kp RALT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LS(O)>;
 
             label = "O_CIRCONFLEXE_MAJ";
