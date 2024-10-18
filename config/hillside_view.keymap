@@ -605,11 +605,11 @@
 
         onedk_layer {
             bindings = <
-&trans      &a_circonflexe  &kp RA(C)  &kp RA(P)             &o_circonflexe         &trans         &trans             &trans    &kp UNDER       &kp LS(RA(SQT))        &u_circonflexe  &trans
-&kp C_MUTE  &kp RA(Z)       &kp RA(G)  &kp RA(F)             &e_circonflexe         &kp RA(N)      &kp LPAR           &kp RPAR  &i_circonflexe  &kp RA(I)              &kp RA(H)       &kp LC(N0)
-&trans      &kp RA(Q)       &kp RA(S)  &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &trans         &kp RA(LS(SLASH))  &trans    &sl 2           &kp RA(LS(SEMICOLON))  &trans          &trans
-                                       &trans                                                                                   &trans
-            &trans          &trans     &trans                &trans                                                   &trans    &trans          &kp LS(RA(N0))         &trans
+&trans      &a_circonflexe  &kp RA(C)   &kp RA(P)             &o_circonflexe         &kp RA(N5)      &trans             &trans    &kp UNDER       &kp LS(RA(SQT))        &u_circonflexe  &trans
+&kp C_MUTE  &kp RA(Z)       &kp RA(G)   &kp RA(F)             &e_circonflexe         &kp RA(N)       &kp LPAR           &kp RPAR  &i_circonflexe  &kp RA(I)              &kp RA(H)       &kp LC(N0)
+&trans      &kp RA(Q)       &kp RA(N9)  &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp RA(N0)      &kp RA(LS(SLASH))  &trans    &sl 2           &kp RA(LS(SEMICOLON))  &trans          &trans
+                                        &trans                                                                                    &trans
+            &trans          &trans      &trans                &trans                                                    &trans    &trans          &kp LS(RA(N0))         &trans
             >;
         };
 
@@ -679,11 +679,11 @@
 
         currencies_layer {
             bindings = <
-&trans  &trans  &trans      &trans      &trans  &trans      &trans            &trans  &trans  &trans  &kp RA(LS(NUMBER_4))  &trans
-&trans  &trans  &kp DOLLAR  &kp RA(N5)  &trans  &trans      &kp RA(NUMBER_4)  &trans  &trans  &trans  &trans                &trans
-&trans  &trans  &trans      &trans      &trans  &trans      &trans            &trans  &trans  &trans  &trans                &trans
-                            &trans                                                    &trans
-        &trans  &trans      &trans      &trans                                &trans  &trans  &trans  &trans
+&trans  &trans  &kp RA(LS(N5))  &trans      &trans  &trans      &trans            &trans  &trans  &trans  &kp RA(LS(NUMBER_4))  &trans
+&trans  &trans  &kp DOLLAR      &kp RA(N5)  &trans  &trans      &kp RA(NUMBER_4)  &trans  &trans  &trans  &trans                &trans
+&trans  &trans  &trans          &trans      &trans  &trans      &trans            &trans  &trans  &trans  &trans                &trans
+                                &trans                                                    &trans
+        &trans  &trans          &trans      &trans                                &trans  &trans  &trans  &trans
             >;
         };
     };
