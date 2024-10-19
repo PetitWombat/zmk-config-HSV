@@ -108,12 +108,12 @@
             timeout-ms = <30>;
         };
 
-        cb_bootloader {
+        cb_reset {
             bindings = <&sys_reset>;
-            key-positions = <12 2>;
+            key-positions = <12 2 3>;
         };
 
-        cb_bootloader_right {
+        cb_reset_right {
             bindings = <&sys_reset>;
             key-positions = <9 23>;
         };
@@ -156,6 +156,16 @@
         cb_bt_clear_right {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <7 31>;
+        };
+
+        cb_bootloader {
+            bindings = <&none>;
+            key-positions = <12 29>;
+        };
+
+        cb_bootloader_right {
+            bindings = <&none>;
+            key-positions = <29 12>;
         };
     };
 
