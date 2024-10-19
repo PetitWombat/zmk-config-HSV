@@ -591,11 +591,11 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&none        &kp Q    &kp C          &kp O           &kp P            &kp W      &kp J   &kp M      &kp D        &onedk           &kp Y         &none
-&kp LC(TAB)  &kp A    &kp S          &kp E           &kp N            &kp F      &kp L   &kp R      &kp T        &kp I            &kp U         &zoom
-&none        &kp Z    &kp X          &interrogation  &kp V            &kp B      &point  &kp H      &kp G        &virgule         &kp K         &none
-                                     &none                                                          &none
-             &kp ESC  &mt LCTRL TAB  &lt 4 ENTER     &lt 5 BACKSPACE                     &lt 5 DEL  &lt 4 ENTER  &mt LSHFT SPACE  &kp LEFT_GUI
+&none        &kp Q         &kp C           &kp O           &kp P            &kp W      &kp J   &kp M      &kp D        &onedk           &kp Y      &none
+&kp LC(TAB)  &kp A         &kp S           &kp E           &kp N            &kp F      &kp L   &kp R      &kp T        &kp I            &kp U      &zoom
+&none        &kp Z         &kp X           &interrogation  &kp V            &kp B      &point  &kp H      &kp G        &virgule         &kp K      &none
+                                           &none                                                          &none
+             &kp LEFT_GUI  &mt LSHIFT TAB  &lt 4 ENTER     &lt 5 BACKSPACE                     &lt 5 DEL  &lt 4 ENTER  &mt LSHFT SPACE  &kp LCTRL
             >;
 
             sensor-bindings =
@@ -609,7 +609,7 @@
 &kp C_MUTE  &kp RA(Z)       &kp RA(G)   &kp RA(F)             &e_circonflexe         &kp RA(N)       &kp LPAR           &kp RPAR  &i_circonflexe  &kp RA(I)              &kp RA(H)       &kp LC(N0)
 &trans      &kp RA(Q)       &kp RA(N9)  &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp RA(N0)      &kp RA(LS(SLASH))  &trans    &sl 2           &kp RA(LS(SEMICOLON))  &trans          &trans
                                         &trans                                                                                    &trans
-            &trans          &trans      &trans                &trans                                                    &trans    &trans          &kp LS(RA(N0))         &trans
+            &trans          &kp ESCAPE  &trans                &trans                                                    &trans    &trans          &kp LS(RA(N0))         &trans
             >;
         };
 
