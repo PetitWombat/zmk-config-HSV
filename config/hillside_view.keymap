@@ -159,12 +159,12 @@
         };
 
         cb_bootloader {
-            bindings = <&none>;
+            bindings = <&bootloader>;
             key-positions = <12 29>;
         };
 
         cb_bootloader_right {
-            bindings = <&none>;
+            bindings = <&bootloader>;
             key-positions = <29 12>;
         };
     };
