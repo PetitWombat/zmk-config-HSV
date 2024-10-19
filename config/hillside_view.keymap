@@ -110,12 +110,12 @@
 
         cb_reset {
             bindings = <&sys_reset>;
-            key-positions = <12 2 3>;
+            key-positions = <2 25>;
         };
 
         cb_reset_right {
             bindings = <&sys_reset>;
-            key-positions = <9 23>;
+            key-positions = <9 34>;
         };
 
         cb_out_ble {
@@ -160,12 +160,12 @@
 
         cb_bootloader {
             bindings = <&bootloader>;
-            key-positions = <12 29>;
+            key-positions = <1 29>;
         };
 
         cb_bootloader_right {
             bindings = <&bootloader>;
-            key-positions = <29 12>;
+            key-positions = <10 30>;
         };
     };
 
