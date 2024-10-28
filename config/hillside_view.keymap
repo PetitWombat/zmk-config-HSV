@@ -38,8 +38,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <4 5>;
-            then-layer = <6>;
+            if-layers = <4 6>;
+            then-layer = <7>;
         };
     };
 
@@ -205,7 +205,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk LGUI>, <&mo 3>, <&tog 3>;
+            bindings = <&sk LGUI>, <&mo 0>, <&tog 0>;
         };
 
         rswp: right_swap {
@@ -213,7 +213,7 @@
             label = "RIGHT_SWAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk RGUI>, <&mo 3>, <&tog 3>;
+            bindings = <&sk RGUI>, <&mo 0>, <&tog 0>;
         };
 
         interrogation: interrogation {
@@ -252,51 +252,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        e_circonflexe: e_circonflexe {
-            compatible = "zmk,behavior-mod-morph";
-            label = "E_CIRCONFLEXE";
-            bindings = <&e_circonflexe_min>, <&e_circonflexe_maj>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        i_circonflexe: i_circonflexe {
-            compatible = "zmk,behavior-mod-morph";
-            label = "I_CIRCONFLEXE";
-            bindings = <&i_circonflexe_min>, <&i_circonflexe_maj>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        u_circonflexe: u_circonflexe {
-            compatible = "zmk,behavior-mod-morph";
-            label = "U_CIRCONFLEXE";
-            bindings = <&u_circonflexe_min>, <&u_circonflexe_maj>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        a_circonflexe: a_circonflexe {
-            compatible = "zmk,behavior-mod-morph";
-            label = "A_CIRCONFLEXE";
-            bindings = <&a_circonflexe_min>, <&a_circonflexe_maj>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        o_circonflexe: o_circonflexe {
-            compatible = "zmk,behavior-mod-morph";
-            label = "O_CIRCONFLEXE";
-            bindings = <&o_circonflexe_min>, <&o_circonflexe_maj>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         circonflexe: circonflexe {
             compatible = "zmk,behavior-mod-morph";
             label = "CIRCONFLEXE";
@@ -327,7 +282,7 @@
         monnaies: monnaies {
             compatible = "zmk,behavior-mod-morph";
             label = "MONNAIES";
-            bindings = <&kp DOLLAR>, <&sl 7>;
+            bindings = <&kp DOLLAR>, <&sl 8>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -354,7 +309,7 @@
         point_mort: point_mort {
             compatible = "zmk,behavior-mod-morph";
             label = "POINT_MORT";
-            bindings = <&kp RIGHT_BRACE>, <&none>;
+            bindings = <&kp RIGHT_BRACE>, <&kp RA(N7)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -390,7 +345,7 @@
         barre: barre {
             compatible = "zmk,behavior-mod-morph";
             label = "BARRE";
-            bindings = <&kp MINUS>, <&none>;
+            bindings = <&kp MINUS>, <&kp RA(LS(N7))>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -427,6 +382,51 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DIVISION";
             bindings = <&kp SLASH>, <&kp RA(LS(EQUAL))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rond_mort: rond_mort {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ROND_MORT";
+            bindings = <&kp AT>, <&kp RA(N7)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        barre_verticale: barre_verticale {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BARRE_VERTICALE";
+            bindings = <&kp LS(BACKSLASH)>, <&kp RA(LS(BACKSLASH))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        truc: truc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TRUC";
+            bindings = <&kp EXCLAMATION>, <&kp RA(BACKSLASH)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        plus: plus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PLUS";
+            bindings = <&kp PLUS>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        backslash: backslash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSLASH";
+            bindings = <&kp BACKSLASH>, <&sl 5>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -605,7 +605,7 @@
 &kp LC(TAB)  &kp A         &kp S           &kp E           &kp N            &kp F      &kp L   &kp R      &kp T        &kp I            &kp U      &zoom
 &none        &kp Z         &kp X           &interrogation  &kp V            &kp B      &point  &kp H      &kp G        &virgule         &kp K      &none
                                            &none                                                          &none
-             &kp LEFT_GUI  &mt LSHIFT TAB  &lt 4 ENTER     &lt 5 BACKSPACE                     &lt 5 DEL  &lt 4 ENTER  &mt LSHFT SPACE  &kp LCTRL
+             &kp LEFT_GUI  &mt LSHIFT TAB  &lt 4 ENTER     &lt 6 BACKSPACE                     &lt 6 DEL  &lt 4 ENTER  &mt LSHFT SPACE  &kp LCTRL
             >;
 
             sensor-bindings =
@@ -615,11 +615,21 @@
 
         onedk_layer {
             bindings = <
-&trans      &a_circonflexe  &kp RA(C)   &kp RA(P)             &o_circonflexe         &kp RA(N5)      &trans             &trans    &kp UNDER       &kp LS(RA(SQT))        &u_circonflexe  &trans
-&kp C_MUTE  &kp RA(Z)       &kp RA(G)   &kp RA(F)             &e_circonflexe         &kp RA(N)       &kp LPAR           &kp RPAR  &i_circonflexe  &kp RA(I)              &kp RA(H)       &kp LC(N0)
-&trans      &kp RA(Q)       &kp RA(N9)  &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp RA(N0)      &kp RA(LS(SLASH))  &trans    &sl 2           &kp RA(LS(SEMICOLON))  &trans          &trans
-                                        &trans                                                                                    &trans
-            &trans          &kp ESCAPE  &trans                &trans                                                    &trans    &trans          &kp LS(RA(N0))         &trans
+&trans      &a_circonflexe_min  &kp RA(C)     &kp RA(P)             &o_circonflexe_min     &kp RA(N5)      &trans             &trans    &kp UNDER           &kp LS(RA(SQT))        &u_circonflexe_min  &trans
+&kp C_MUTE  &kp RA(Z)           &kp RA(G)     &kp RA(F)             &e_circonflexe_min     &kp RA(N)       &kp LPAR           &kp RPAR  &i_circonflexe_min  &kp RA(I)              &kp RA(H)           &kp LC(N0)
+&trans      &kp RA(Q)           &kp RA(N9)    &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp RA(N0)      &kp RA(LS(SLASH))  &trans    &kp RA(M)           &kp RA(LS(SEMICOLON))  &trans              &trans
+                                              &trans                                                                                    &trans
+            &trans              &lt 2 ESCAPE  &trans                &trans                                                    &trans    &trans              &lt 2 RA(LS(N0))       &trans
+            >;
+        };
+
+        shift_1dk_layer {
+            bindings = <
+&trans  &a_circonflexe_maj  &kp RA(LS(C))  &kp RA(LS(P))  &o_circonflexe_maj  &kp RA(NUMBER_4)      &trans  &trans  &trans              &trans         &u_circonflexe_maj  &trans
+&trans  &kp RA(LS(Z))       &kp LS(RA(G))  &kp RA(LS(F))  &e_circonflexe_maj  &kp RA(LS(N))         &trans  &trans  &i_circonflexe_maj  &kp RA(LS(I))  &kp RA(LS(H))       &trans
+&trans  &kp RA(LS(Q))       &trans         &trans         &trans              &trans                &trans  &trans  &trans              &trans         &trans              &trans
+                                           &trans                                                                   &trans
+        &trans              &trans         &trans         &trans                                            &trans  &trans              &trans         &trans
             >;
         };
 
@@ -633,30 +643,27 @@
             >;
         };
 
-        swap_layer {
-            label = "SWAP";
-            bindings = <
-&kp PIPE   &ht N0 P           &ht N9 O         &ht N8 I      &ht N7 U    &ht N6 Y      &ht N5 T  &ht N4 R    &ht N3 E       &ht N2 W       &ht N1 Q        &ht GRAVE TAB
-&kp SQT    &kp SEMI           &kp L            &kp K         &kp J       &kp H         &kp G     &kp F       &kp D          &kp S          &kp A           &kp ESC
-&sk RSHFT  &mt_sk RCTRL FSLH  &mt_sk RALT DOT  &kp COMMA     &kp M       &kp N         &kp B     &kp V       &kp C          &mt_sk LALT X  &mt_sk LCTRL Z  &sk LSHFT
-                                               &kp C_MUTE                                                    &kp SPACE
-           &tog 3             &kp RET          &lt_qk 5 DEL  &sk RSHIFT                          &sk LSHIFT  &lt_qk 4 BSPC  &kp SPACE      &tog 3
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-        };
-
         sym_layer {
             label = "SYMBOLS";
             bindings = <
-&trans  &circonflexe       &inferieur            &superieur             &monnaies    &pourcent      &trans  &kp AMPS  &trans    &trans     &trans             &trans
-&trans  &anti_circonflexe  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &point_mort  &egal          &trans  &trans    &barre    &division  &kp DOUBLE_QUOTES  &trans
-&trans  &tilde             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &kp HASH       &trans  &trans    &trans    &trans     &trans             &trans
-                                                 &kp END                                                              &kp C_PP
-        &trans             &trans                &trans                 &trans                              &trans    &trans    &trans     &trans
+&trans  &circonflexe       &inferieur            &superieur             &monnaies    &pourcent      &rond_mort        &kp AMPS  &fois          &aigu          &grave             &trans
+&trans  &anti_circonflexe  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &point_mort  &egal          &backslash        &plus     &barre         &division      &kp DOUBLE_QUOTES  &trans
+&trans  &tilde             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER    &kp HASH       &barre_verticale  &truc     &kp SEMICOLON  &kp RS(COLON)  &kp QUESTION       &trans
+                                                 &trans                                                                         &trans
+        &trans             &trans                &trans                 &trans                                        &trans    &trans         &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_NEXT C_PREV>;
+        };
+
+        barre_layer {
+            bindings = <
+&trans  &trans  &trans  &kp RA(L)  &trans  &trans      &trans  &kp RA(D)  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans      &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans      &trans  &trans     &trans  &trans  &trans  &trans
+                        &trans                                            &trans
+        &trans  &trans  &trans     &trans                      &trans     &trans  &trans  &trans
+            >;
         };
 
         num_layer {
