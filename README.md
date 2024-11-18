@@ -1,1 +1,1 @@
-Ergo-l config for hillsideview, emulated from eurkey
+Ergo-l config for hillsideview, emulated from qwerty-intl (eurkey in main branch)
