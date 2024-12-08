@@ -436,6 +436,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        backspace: backspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE";
+            bindings = <&kp LC(BACKSPACE)>, <&kp BACKSPACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     macros {
@@ -606,11 +615,11 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&none        &kp Q         &kp C           &kp O           &kp P            &kp W      &kp J   &kp M      &kp D        &onedk           &kp Y      &none
-&kp LC(TAB)  &kp A         &kp S           &kp E           &kp N            &kp F      &kp L   &kp R      &kp T        &kp I            &kp U      &zoom
-&none        &kp Z         &kp X           &interrogation  &kp V            &kp B      &point  &kp H      &kp G        &virgule         &kp K      &none
-                                           &none                                                          &none
-             &kp LEFT_GUI  &mt LSHIFT TAB  &lt 4 ENTER     &lt 6 BACKSPACE                     &lt 6 DEL  &lt 4 ENTER  &mt LSHFT SPACE  &kp LCTRL
+&none        &kp Q         &kp C           &kp O           &kp P       &kp W      &kp J   &kp M      &kp D        &onedk           &kp Y      &none
+&kp LC(TAB)  &kp A         &kp S           &kp E           &kp N       &kp F      &kp L   &kp R      &kp T        &kp I            &kp U      &zoom
+&none        &kp Z         &kp X           &interrogation  &kp V       &kp B      &point  &kp H      &kp G        &virgule         &kp K      &none
+                                           &none                                                     &none
+             &kp LEFT_GUI  &mt LSHIFT TAB  &lt 4 ENTER     &backspace                     &lt 6 DEL  &lt 4 ENTER  &mt LSHFT SPACE  &kp LCTRL
             >;
 
             sensor-bindings =
