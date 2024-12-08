@@ -643,7 +643,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 &kp LC(TAB)  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL E   &hml LEFT_SHIFT N  &kp F      &kp L   &hmr RIGHT_SHIFT R  &hmr RCTRL T  &hmr LEFT_ALT I  &hmr RIGHT_GUI U  &zoom
 &none        &kp Z           &kp X             &interrogation  &kp V                     &kp B      &point  &kp H                      &kp G          &virgule          &kp K              &none
                                                &none                                                                                   &none
-             &kp LEFT_GUI    &mt LSHIFT TAB    &lt 4 ENTER     &backspace                                   &lt 6 DEL                  &lt 4 ENTER    &mt LSHFT SPACE   &mt LCTRL ESCAPE
+             &kp LEFT_GUI    &mt LSHIFT TAB    &lt 4 ENTER     &kp BACKSPACE                                   &lt 6 DEL                  &lt 4 ENTER    &mt LSHFT SPACE   &mt LCTRL ESCAPE
             >;
 
             sensor-bindings =
