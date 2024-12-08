@@ -640,7 +640,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
             label = "DEFAULT";
             bindings = <
 &none        &kp Q           &kp C             &kp O           &kp P                     &kp W      &kp J   &kp M                      &kp D          &onedk            &kp Y              &none
-&kp LC(TAB)  &hm LEFT_GUI A  &hm_l LEFT_ALT S  &hm_l LCTRL E   &hm_shift_l LEFT_SHIFT N  &kp F      &kp L   &hm_shift_r RIGHT_SHIFT R  &hm_r RCTRL T  &hm_r LEFT_ALT I  &hm_r RIGHT_GUI U  &zoom
+&kp LC(TAB)  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL E   &hml LEFT_SHIFT N  &kp F      &kp L   &hmr RIGHT_SHIFT R  &hmr RCTRL T  &hmr LEFT_ALT I  &hmr RIGHT_GUI U  &zoom
 &none        &kp Z           &kp X             &interrogation  &kp V                     &kp B      &point  &kp H                      &kp G          &virgule          &kp K              &none
                                                &none                                                                                   &none
              &kp LEFT_GUI    &mt LSHIFT TAB    &lt 4 ENTER     &backspace                                   &lt 6 DEL                  &lt 4 ENTER    &mt LSHFT SPACE   &mt LCTRL ESCAPE
